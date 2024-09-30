@@ -1,4 +1,4 @@
-const Texto = (props) => {
+const Texto = ({comision,anioActual}) => {
   return (
     <article>
       <h3>Componentes</h3>
@@ -20,7 +20,7 @@ const Texto = (props) => {
         los cambios en los datos se reflejan automáticamente en la interfaz de
         usuario
       </p>
-      <h4>Comision: {props.comision} - Año actual: {props.anioActual}</h4>
+      <h4>Comision: {comision} - Año actual: {anioActual}</h4>
     </article>
   );
 };
