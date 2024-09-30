@@ -2,6 +2,7 @@ import Texto from "./Texto";
 
 const Informacion = () => {
   // Aqui agrego la mayor parte de logica
+  const anio= new Date().getFullYear();
 
   return (
     <section>
@@ -18,7 +19,7 @@ const Informacion = () => {
         aplicaciones a gran escala.
       </p>
       {/* Enviar props */}
-      <Texto comision= '101i' ></Texto>
+      <Texto comision= '101i' anioActual={anio} ></Texto>
     </section>
   );
 };
